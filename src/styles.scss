@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+// body {
+//   font-family: 'Dosis', sans-serif;
+// }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+label {
+  font-family: 'Dosis', sans-serif;
+  padding: 0 0 10px 0;
+}
+
+p {
+  font-family: 'Dosis', sans-serif;
+}
