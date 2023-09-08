@@ -32,12 +32,12 @@
           <button class="btn " type="button">Buy New</button>
           <button class="btn " type="button">Add to cart</button>
         </div>
-        <div class="row">
-          <div class="col-lg-7 col-md-12 buts">
+        <div class="d-flex flex-row justify-content-between">
+          <div class=" buts">
             <button class="btn " type="button"><i class="fas fa-heart"></i> Add to wishlist</button>
             <button class="btn " type="button"><i class="fas fa-sync-alt"></i> Add to Compare</button>
           </div>
-          <div class="col-lg-5 col-md-12 social">
+          <div class="social">
             <a href="">
               <i class="fa-brands fa-square-facebook"></i>
             </a>
@@ -45,7 +45,6 @@
             <a href=""><i class="fab fa-twitter" aria-hidden="true"></i></a>
             <a href=""><i class="fab fa-pinterest-p" aria-hidden="true"></i></a>
             <a href=""><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
-
           </div>
         </div>
       </div>
@@ -97,4 +96,22 @@
       </div>
     </div>
   </div>
+</section>
+<section class="features">
+  <div class="container">
+    <div class="row text-center">
+      <h2>Featured Products</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet lacus enim.</p>
+    </div>
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide><img src="../../assets/img-pro-01.jpg" alt=""></ng-template>
+      <ng-template carouselSlide><img src="../../assets/img-pro-02.jpg" alt=""></ng-template>
+      <ng-template carouselSlide><img src="../../assets/img-pro-03.jpg" alt=""></ng-template>
+      <ng-template carouselSlide><img src="../../assets/img-pro-04.jpg" alt=""></ng-template>
+
+    </owl-carousel-o>
+    <div></div>
+    <div></div>
+  </div>
+
 </section>
