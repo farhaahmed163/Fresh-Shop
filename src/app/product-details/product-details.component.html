@@ -103,15 +103,109 @@
       <h2>Featured Products</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet lacus enim.</p>
     </div>
-    <owl-carousel-o [options]="customOptions">
-      <ng-template carouselSlide><img src="../../assets/img-pro-01.jpg" alt=""></ng-template>
-      <ng-template carouselSlide><img src="../../assets/img-pro-02.jpg" alt=""></ng-template>
-      <ng-template carouselSlide><img src="../../assets/img-pro-03.jpg" alt=""></ng-template>
-      <ng-template carouselSlide><img src="../../assets/img-pro-04.jpg" alt=""></ng-template>
+    <owl-carousel-o [options]="customOptions" class="slider">
+      <ng-template carouselSlide class="item">
+        <div class="card-details">
+          <div class="image">
+            <img src="https://themewagon.github.io/freshshop/images/img-pro-01.jpg" alt="">
+            <div class="overlay">
+              <button class="btn " type="button">Buy New</button>
+              <ul>
+                <li>
+                  <a href=""><i class="fas fa-eye"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fas fa-sync-alt"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-regular fa-heart"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="text">
+            <h4>Lorem ipsum dolor sit amet</h4>
+            <h5> $9.79</h5>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide class="item">
+        <div class="card-details">
+          <div class="image">
+            <img src="https://themewagon.github.io/freshshop/images/img-pro-02.jpg" alt="">
+            <div class="overlay">
+              <button class="btn " type="button">Buy New</button>
+              <ul>
+                <li>
+                  <a href=""><i class="fas fa-eye"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fas fa-sync-alt"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-regular fa-heart"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="text">
+            <h4>Lorem ipsum dolor sit amet</h4>
+            <h5> $9.79</h5>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="card-details">
+          <div class="image">
+            <img src="https://themewagon.github.io/freshshop/images/img-pro-03.jpg" alt="">
+            <div class="overlay">
+              <button class="btn " type="button">Buy New</button>
+              <ul>
+                <li>
+                  <a href=""><i class="fa-solid fa-eye"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fas fa-sync-alt"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-regular fa-heart"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="text">
+            <h4>Lorem ipsum dolor sit amet</h4>
+            <h5> $9.79</h5>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="card-details">
+          <div class="image">
+            <img src="https://themewagon.github.io/freshshop/images/img-pro-04.jpg" alt="">
+            <div class="overlay">
+              <button class="btn " type="button">Buy New</button>
+              <ul>
+                <li>
+                  <a href=""><i class="fa-solid fa-eye"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fas fa-sync-alt"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-regular fa-heart"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="text">
+            <h4>Lorem ipsum dolor sit amet</h4>
+            <h5> $9.79</h5>
+          </div>
 
+        </div>
+      </ng-template>
     </owl-carousel-o>
-    <div></div>
-    <div></div>
   </div>
 
 </section>
