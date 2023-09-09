@@ -10,7 +10,7 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 export class ProductDetailsComponent {
   customOptions: OwlOptions = {
     loop: true,
-    autoplay: false,
+    autoplay: true,
     mouseDrag: true,
     touchDrag: false,
     pullDrag: false,
