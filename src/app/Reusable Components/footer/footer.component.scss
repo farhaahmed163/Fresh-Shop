@@ -65,6 +65,7 @@ section {
             font-size: 20px;
             position: absolute;
             right: 20px;
+            color: #666666;
 
           }
 
@@ -101,7 +102,7 @@ section {
               a {
                 color: #ffffff;
                 display: inline-block;
-                width: 36px;
+                width: 30px;
                 height: 36px;
 
                 text-align: center;
@@ -129,7 +130,7 @@ section {
 
         hr {
           border: 1px solid #c8c7c7;
-          margin: 50px 0;
+          margin: 35px 0;
         }
       }
 
@@ -216,4 +217,41 @@ section {
       }
     }
   }
+}
+
+// Media Query
+
+/* Styles for tablets */
+@media (max-width: 768px) {
+  section {
+    .top-footer {
+      padding: 0;
+
+      .container {
+
+        .row {
+          .col {
+            margin-bottom: 30px;
+          }
+        }
+
+        .lower-part {
+          .col {
+            h4::before {
+              width: 100%;
+            }
+
+          }
+        }
+      }
+    }
+
+
+  }
+}
+
+/* Styles for mobile devices */
+@media (max-width: 320px) {
+  /* Mobile-specific styles */
+  /* ... */
 }
