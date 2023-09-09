@@ -32,7 +32,7 @@
 }
 
 .prod-details {
-  padding-top: 70px;
+  padding: 70px;
 
   .container {
     .row {
@@ -114,17 +114,17 @@
 
 
         .buts {
-          margin-top: 40px;
-          padding: 0;
+          margin-top: 30px;
+
 
           button {
             background-color: #b0b435;
             border-radius: 0;
-            padding: 10px 20px;
+            padding: 10px 17px;
             font-weight: 700;
             color: #ffffff;
             border: none;
-            margin-right: 10px;
+            margin-right: 3px;
           }
 
           button::after {
@@ -163,6 +163,7 @@
 .reviews {
   .container {
     padding: 70px;
+
 
     .card {
       .card-body {
@@ -215,6 +216,8 @@
 
 .features {
   margin-bottom: 100px;
+
+  .container {}
 
   .card-details {
     margin: 10px;
@@ -279,22 +282,6 @@
           text-align: center;
           padding: 0;
 
-
-          // span {
-          //   position: absolute;
-          //   color: #fff;
-          //   background-color: red;
-          //   left: 50%;
-          //   top: 0;
-          //   transform: translateX(50%);
-          //   padding: 10px 15px;
-          //   border-radius: 7px;
-          //   white-space: nowrap;
-          //   transition: opacity 0.5s ease;
-          //   z-index: 100000;
-
-          // }
-
           i {
             color: #fff;
             background-color: #b0b435;
@@ -340,16 +327,78 @@
 
 
 // Media Query
+/* Styles for large screens */
+@media (max-width: 1024px) {
+  .buy {
+    flex-direction: column !important;
+  }
+}
 
 /* Styles for tablets */
 @media (max-width: 768px) {
   .cover {
     padding: 35px;
   }
+
+  .prod-details {
+    padding: 70px 20px;
+  }
+
+  .reviews {
+    .container {
+      padding: 0px;
+      margin-bottom: 70px;
+
+    }
+  }
 }
 
 /* Styles for mobile devices */
 @media (max-width: 480px) {
-  /* Mobile-specific styles */
-  /* ... */
+  .prod-details {
+    .container {
+      .row {
+        .data {
+
+          padding: 10px;
+        }
+
+        .buy {
+          .buts {
+            button {
+              font-size: 15px;
+              padding: 10px 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .prod-details {
+    .container {
+      .row {
+        .buy {
+          .buts {
+            flex-direction: column;
+
+            button {
+              width: 70%;
+              margin-bottom: 40px;
+            }
+          }
+        }
+
+        .data {
+          .social {
+
+
+            padding-top: 0;
+          }
+        }
+      }
+    }
+  }
 }

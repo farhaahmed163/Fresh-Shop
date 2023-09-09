@@ -43,7 +43,7 @@ export class FooterComponent {
         items: 2
       },
       400: {
-        items: 2
+        items: 3
       },
       740: {
         items: 4

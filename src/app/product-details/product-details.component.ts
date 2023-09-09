@@ -13,7 +13,7 @@ export class ProductDetailsComponent {
     autoplay: true,
     mouseDrag: true,
     touchDrag: false,
-    pullDrag: false,
+    pullDrag: true,
     dots: true,
     navSpeed: 1000,
     navText: ['', ''],
@@ -21,10 +21,10 @@ export class ProductDetailsComponent {
       0: {
         items: 1
       },
-      400: {
+      425: {
         items: 3
       },
-      740: {
+      768: {
         items: 3
       },
       940: {
