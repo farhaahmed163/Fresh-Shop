@@ -1,0 +1,100 @@
+<section>
+  <div class="slider">
+    <owl-carousel-o [options]="customOptions">
+      <ng-container *ngFor="let slide of slidesStore">
+        <ng-template carouselSlide [id]="slide.id">
+          <img [src]="slide.src" [alt]="slide.alt" [title]="slide.title">
+        </ng-template>
+      </ng-container>
+    </owl-carousel-o>
+  </div>
+  <section class="top-footer">
+    <div class="container ">
+      <div class="row upper-part">
+        <div class="col-4">
+          <h4>Business Time</h4>
+          <ul>
+            <li>Monday - Friday: 08.00am to 05.00pm</li>
+            <li>Saturday: 10.00am to 08.00pm</li>
+            <li>Sunday: <span>Closed</span></li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <h4>Newsletter</h4>
+          <form action="">
+            <input type="email" name="" id="" placeholder=" Email Address *">
+            <i class="fa-solid fa-envelope icon"></i>
+          </form>
+          <button type="submit">Submit</button>
+
+        </div>
+        <div class="col-4 last">
+          <h4>Social Media</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <ul>
+            <li><a href=""><i class="fa-brands fa-square-facebook"></i></a></li>
+            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+            <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+            <li><a href=""><i class="fab fa-google-plus"></i></a></li>
+            <li><a href=""><i class="fa fa-rss"></i></a></li>
+            <li><a href=""><i class="fab fa-pinterest-p"></i></a></li>
+            <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
+
+          </ul>
+        </div>
+        <hr>
+      </div>
+      <div class="row lower-part">
+        <div class="col-4">
+          <h4>ABOUT FRESHSHOP</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+          </p>
+        </div>
+        <div class="col-4">
+          <h4>INFORMATION</h4>
+          <ul class="info">
+            <li><a href="">About US</a></li>
+            <li><a href="">Customer Service</a></li>
+            <li><a href="">Our Sitemap</a></li>
+            <li><a href="">Terms&conditions</a></li>
+            <li><a href="">Delivery Information</a></li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <h4>CONTACT US</h4>
+          <ul class="contact">
+            <li>
+              <p><i class="fas fa-map-marker-alt"></i> Address: Michael I. Days 3756 <br>Preston Street Wichita,<br> KS
+                67213 </p>
+            </li>
+            <li>
+              <p><i class="fas fa-phone-square"></i> Phone: <a href="tel:+1-888 705 770">+1-888 705 770</a> </p>
+            </li>
+
+            <li>
+              <p> <i class="fa-solid fa-envelope icon"></i>Email: <a
+                  href="mailto:contactinfo@gmail.com">contactinfo@gmail.com</a>
+              </p>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <div class="copy-right">
+    <p>
+      All Rights Reserved. © 2018 <a href="">ThewayShop </a> Design By :
+      <a href="">html design</a>
+    </p>
+
+  </div>
+</section>

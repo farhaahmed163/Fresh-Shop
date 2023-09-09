@@ -1,0 +1,219 @@
+section {
+  .slider {
+    background: linear-gradient(rgba(0, 0, 0, 0.999), rgba(0, 0, 0, 0.7)), url("https://themewagon.github.io/freshshop/images/ins-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+    padding: 50px 50px;
+
+    img {
+      // width: 100%;
+    }
+  }
+
+  .top-footer {
+    padding: 70px 100px;
+    background: #010101;
+
+    .container {
+      padding: 30px;
+
+      .row {
+        h4 {
+          color: #fff;
+          position: relative;
+          font-size: 20px;
+        }
+
+        h4::before {
+          content: "";
+          width: 50%;
+          height: 3px;
+          background-color: #b0b435;
+          border-radius: 6px;
+          position: absolute;
+          bottom: 3px;
+          left: 0px;
+        }
+
+        ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+
+          li {
+            color: #fff;
+            padding: 0;
+            font-size: 16px;
+            line-height: 29px;
+          }
+        }
+
+        p {
+          color: #cccccc;
+          font-size: 15px;
+        }
+
+        form {
+          padding-bottom: 15px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          position: relative;
+
+          .icon {
+            font-size: 20px;
+            position: absolute;
+            right: 20px;
+
+          }
+
+          input {
+            width: 100%;
+            padding: 10px;
+            color: #757575;
+            outline: none;
+            position: relative;
+          }
+        }
+
+        button {
+          padding: 10px;
+          color: #ffffff;
+          font-size: 15px;
+          font-weight: 500;
+          background-color: #b0b435;
+          border: 1px solid #b0b435;
+          transition: 0.3s ease;
+        }
+
+        button:hover {
+          background-color: #010101;
+        }
+
+
+        .last {
+          ul {
+            display: flex;
+            flex-direction: row;
+
+            li {
+              a {
+                color: #ffffff;
+                display: inline-block;
+                width: 36px;
+                height: 36px;
+
+                text-align: center;
+                line-height: 32px;
+                margin: 5px;
+
+                i {
+                  color: #fff;
+                  font-size: 15px;
+                  transition: 0.3s ease;
+                  border: 2px solid #ffffff;
+                  padding: 10px;
+                }
+              }
+
+              :hover i {
+                color: #b0b435;
+                border: 2px solid #b0b435;
+
+              }
+
+            }
+          }
+        }
+
+        hr {
+          border: 1px solid #c8c7c7;
+          margin: 50px 0;
+        }
+      }
+
+      .lower-part {
+        h4 {
+          font-size: 16px;
+          font-weight: 700;
+        }
+
+        p {
+          font-size: 14px;
+          line-height: 25px;
+        }
+
+        .info {
+          li {
+            margin: 10px 0;
+
+
+            a {
+              text-decoration: none;
+              color: #fff;
+              font-size: 15px;
+              transition: all .3s ease-in-out;
+            }
+
+          }
+
+          li:hover a {
+            color: #b0b435;
+            scale: (0.3);
+          }
+        }
+
+        .contact {
+          li {
+            p {
+              color: #cccc;
+              font-size: 16px;
+              font-weight: 300;
+
+              i {
+                color: #d4d1d1cc;
+                font-size: 16px;
+                margin-right: 5px;
+              }
+
+              a {
+                text-decoration: none;
+                color: #cccc;
+                transition: 0.3s ease;
+              }
+
+              a:hover {
+                color: #b0b435;
+              }
+            }
+
+          }
+        }
+      }
+
+    }
+  }
+
+  .copy-right {
+    background-color: #060606;
+    padding: 20px;
+
+    p {
+      font-size: 16px;
+      text-align: center;
+      color: #fff;
+      margin: 0;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        transition: 0.3s ease;
+      }
+
+      a:hover {
+        color: #b0b435;
+      }
+    }
+  }
+}

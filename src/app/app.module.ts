@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { FooterComponent } from './Reusable Components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
