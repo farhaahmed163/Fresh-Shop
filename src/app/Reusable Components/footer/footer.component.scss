@@ -1,15 +1,14 @@
 section {
   .slider {
+    align-items: center;
     background: linear-gradient(rgba(0, 0, 0, 0.999), rgba(0, 0, 0, 0.7)), url("https://themewagon.github.io/freshshop/images/ins-bg.jpg");
     background-size: cover;
     background-position: center;
-    min-height: 50vh;
-    padding: 50px 50px;
-
-    img {
-      // width: 100%;
-    }
+    // min-height: 50vh;
+    padding: 30px;
   }
+
+
 
   .top-footer {
     padding: 70px 100px;
@@ -248,10 +247,4 @@ section {
 
 
   }
-}
-
-/* Styles for mobile devices */
-@media (max-width: 320px) {
-  /* Mobile-specific styles */
-  /* ... */
 }
