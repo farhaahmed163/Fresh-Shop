@@ -10,10 +10,12 @@
     font-family: 'Dosis', sans-serif;
     font-size: 28px;
     font-weight: 700;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
   .navigate {
-    // width: 15%;
+
 
     p {
       display: inline-block;
@@ -337,7 +339,7 @@
 /* Styles for tablets */
 @media (max-width: 768px) {
   .cover {
-    padding: 35px;
+    padding: 25px;
   }
 
   .prod-details {
@@ -377,6 +379,27 @@
 }
 
 @media (max-width: 320px) {
+  .cover {
+    .container {
+      .row {
+        h2 {
+          font-size: 20px;
+        }
+
+        .navigate {
+          width: 50%;
+
+          p {
+            font-size: 15px;
+            padding: 4px;
+            width: 100%;
+          }
+
+        }
+      }
+    }
+  }
+
   .prod-details {
     .container {
       .row {
