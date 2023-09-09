@@ -12,7 +12,7 @@ export class ProductDetailsComponent {
     loop: true,
     autoplay: true,
     mouseDrag: true,
-    touchDrag: false,
+    touchDrag: true,
     pullDrag: true,
     dots: true,
     navSpeed: 1000,
