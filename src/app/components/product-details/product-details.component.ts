@@ -11,12 +11,12 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 export class ProductDetailsComponent {
   customOptions: OwlOptions = {
     loop: true,
-    autoplay: false,
+    autoplay: true,
     mouseDrag: true,
     touchDrag: true,
     pullDrag: true,
-    dots: true,
-    navSpeed: 1000,
+    dots: false,
+    navSpeed: 700,
     navText: ['', ''],
     responsive: {
       0: {
@@ -32,6 +32,6 @@ export class ProductDetailsComponent {
         items: 4
       }
     },
-    nav: true
+    nav: false
   }
 }
