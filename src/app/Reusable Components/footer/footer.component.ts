@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss'],
+  // encapsulation: ViewEncapsulation.None
 
 
 })
@@ -52,7 +53,7 @@ export class FooterComponent {
         items: 5
       }
     },
-    nav: true
+    nav: false
   }
 
 }

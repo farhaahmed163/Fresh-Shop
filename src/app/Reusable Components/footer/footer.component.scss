@@ -4,11 +4,43 @@ section {
     background: linear-gradient(rgba(0, 0, 0, 0.999), rgba(0, 0, 0, 0.7)), url("https://themewagon.github.io/freshshop/images/ins-bg.jpg");
     background-size: cover;
     background-position: center;
-    // min-height: 50vh;
-    padding: 30px;
+    padding: 50px;
+
+
+    .right {
+      position: absolute;
+      right: 0;
+      color: #fff;
+      top: 0;
+      height: 100%;
+      background-color: transparent;
+      border-radius: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .right:hover {
+      background-color: #b0b435;
+    }
+
+    .left {
+      position: absolute;
+      left: 0;
+      color: #fff;
+      top: 0;
+      height: 100%;
+      border-radius: 0;
+    }
+
+    .left:hover {
+      background-color: #b0b435;
+    }
+
+    .left :hover {
+      background-color: #b0b435;
+    }
+
   }
-
-
 
   .top-footer {
     padding: 70px 100px;
@@ -85,10 +117,31 @@ section {
           background-color: #b0b435;
           border: 1px solid #b0b435;
           transition: 0.3s ease;
+          position: relative;
+          overflow: hidden;
+          transition: background-color .8s;
+        }
+
+        button::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 10px;
+          height: 10px;
+          background-color: #000;
+          border-radius: 50%;
+          opacity: 0;
+          transition: all .5s;
+          z-index: -1;
+
         }
 
         button:hover {
-          background-color: #010101;
+          background-color: #000;
+          color: #fff;
+          z-index: 1;
         }
 
 
@@ -154,13 +207,13 @@ section {
               color: #fff;
               font-size: 15px;
               transition: all .3s ease-in-out;
+              display: block;
             }
-
           }
 
           li:hover a {
             color: #b0b435;
-            scale: (0.3);
+            transform: translateX(5px);
           }
         }
 
@@ -216,35 +269,35 @@ section {
       }
     }
   }
-}
 
-// Media Query
+  // Media Query
 
-/* Styles for tablets */
-@media (max-width: 768px) {
-  section {
-    .top-footer {
-      padding: 0;
+  /* Styles for tablets */
+  @media (max-width: 768px) {
+    section {
+      .top-footer {
+        padding: 0;
 
-      .container {
+        .container {
 
-        .row {
-          .col {
-            margin-bottom: 30px;
-          }
-        }
-
-        .lower-part {
-          .col {
-            h4::before {
-              width: 100%;
+          .row {
+            .col {
+              margin-bottom: 30px;
             }
+          }
 
+          .lower-part {
+            .col {
+              h4::before {
+                width: 100%;
+              }
+
+            }
           }
         }
       }
+
+
     }
-
-
   }
 }

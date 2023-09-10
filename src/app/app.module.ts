@@ -1,21 +1,21 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProductDetailsComponent } from './product-details/product-details.component';
-import { CarouselModule } from 'ngx-owl-carousel-o';
 import { FooterComponent } from './Reusable Components/footer/footer.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductDetailsComponent,
     FooterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, CarouselModule
+    AppRoutingModule,
+    CarouselModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

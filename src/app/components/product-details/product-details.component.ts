@@ -1,16 +1,17 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+
 
 @Component({
   selector: 'app-product-details',
   templateUrl: './product-details.component.html',
-  styleUrls: ['./product-details.component.scss'],
-  // encapsulation: ViewEncapsulation.None
+  styleUrls: ['./product-details.component.scss']
+
 })
 export class ProductDetailsComponent {
   customOptions: OwlOptions = {
     loop: true,
-    autoplay: true,
+    autoplay: false,
     mouseDrag: true,
     touchDrag: true,
     pullDrag: true,
@@ -34,4 +35,3 @@ export class ProductDetailsComponent {
     nav: true
   }
 }
-

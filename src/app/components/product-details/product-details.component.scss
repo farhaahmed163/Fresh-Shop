@@ -1,9 +1,10 @@
 .cover {
   padding: 60px 150px;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../assets/all-bg-title.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../../assets/all-bg-title.jpg);
   background-position: center;
-
+  background-attachment: fixed;
+  background-size: cover;
 
   h2 {
     color: #fff;
@@ -15,8 +16,6 @@
   }
 
   .navigate {
-
-
     p {
       display: inline-block;
       padding: 15px;
@@ -29,7 +28,6 @@
         text-decoration: none;
       }
     }
-
   }
 }
 
@@ -38,6 +36,50 @@
 
   .container {
     .row {
+      .slider {
+        .carousel-indicators {
+          button {
+            background-color: transparent;
+
+            .img-1 {
+              right: 12px;
+              width: 65px;
+              top: 28px;
+            }
+
+            .img-2 {
+              right: -17px;
+              width: 65px;
+              top: 28px;
+            }
+
+            .img-3 {
+              right: -46px;
+              width: 65px;
+              top: 28px;
+            }
+          }
+        }
+
+        .slide {
+          padding: 0 2rem;
+
+          .carousel-control-prev {
+            left: -5px;
+          }
+
+          .carousel-control-next {
+            right: -5px;
+          }
+
+          button {
+            .icon {
+              width: 30%;
+            }
+          }
+        }
+      }
+
       .data {
 
         padding: 0px 30px;
@@ -129,12 +171,6 @@
             margin-right: 3px;
           }
 
-          button::after {
-            content: "";
-            display: block;
-
-          }
-
           button:hover {
             background-color: #000;
           }
@@ -166,7 +202,6 @@
   .container {
     padding: 70px;
 
-
     .card {
       .card-body {
         .product {
@@ -179,10 +214,8 @@
               border: 0.5px solid #DEE2E6;
               padding: 3px;
               margin: auto;
-
             }
           }
-
 
           p {
             padding: 3px;
@@ -219,7 +252,33 @@
 .features {
   margin-bottom: 100px;
 
-  .container {}
+  .container {
+    position: relative;
+  }
+
+  .right {
+    position: absolute;
+    left: 50%;
+    background-color: #000;
+    color: #fff;
+    border-radius: 0;
+  }
+
+  .right:hover {
+    background-color: #b0b435;
+  }
+
+  .left {
+    position: absolute;
+    right: 50%;
+    background-color: #000;
+    color: #fff;
+    border-radius: 0;
+  }
+
+  .left:hover {
+    background-color: #b0b435;
+  }
 
   .card-details {
     margin: 10px;
@@ -261,7 +320,7 @@
       width: 100%;
       transition: 0.3s;
       overflow: hidden;
-      animation: bounce 1s infinite;
+      animation: bounce 2s linear;
       display: flex;
       align-items: flex-end;
       flex-direction: row;
@@ -304,6 +363,7 @@
 
 }
 
+// animation
 @keyframes bounce {
 
   20%,
@@ -314,15 +374,15 @@
   }
 
   40% {
-    transform: translateY(-30px);
+    transform: translateY(-50px);
   }
 
   70% {
-    transform: translateY(-10px);
+    transform: translateY(-20px);
   }
 
   90% {
-    transform: translateY(-2px);
+    transform: translateY(-8px);
   }
 }
 
@@ -334,6 +394,30 @@
   .buy {
     flex-direction: column !important;
   }
+
+  .prod-details {
+    padding: 70px 0px;
+
+    .container {
+      .row {
+        .slider {
+
+
+          .slide {
+            padding: 0;
+
+            .carousel-control-prev {
+              left: -28px;
+            }
+
+            .carousel-control-next {
+              right: -28px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 /* Styles for tablets */
@@ -344,6 +428,28 @@
 
   .prod-details {
     padding: 70px 20px;
+
+    .container {
+      .row {
+        .slider {
+          .indicators {
+            padding: 0 20px;
+          }
+
+          .slide {
+            padding: 0;
+
+            .carousel-control-prev {
+              left: -19px;
+            }
+
+            .carousel-control-next {
+              right: -19px;
+            }
+          }
+        }
+      }
+    }
   }
 
   .reviews {
@@ -360,9 +466,26 @@
   .prod-details {
     .container {
       .row {
-        .data {
+        .slider {
+          .indicators {
+            padding: 0 30px;
+          }
 
-          padding: 10px;
+          .slide {
+            .carousel-control-prev {
+              left: -25px;
+            }
+
+            .carousel-control-next {
+              right: -25px;
+            }
+
+          }
+        }
+
+        .data {
+          padding: 0px;
+          margin-top: 80px;
         }
 
         .buy {
@@ -403,6 +526,18 @@
   .prod-details {
     .container {
       .row {
+        .slider {
+          .slide {
+            .carousel-control-prev {
+              left: -19px;
+            }
+
+            .carousel-control-next {
+              right: -19px;
+            }
+          }
+        }
+
         .buy {
           .buts {
             flex-direction: column;
@@ -411,13 +546,12 @@
               width: 70%;
               margin-bottom: 40px;
             }
+
           }
         }
 
         .data {
           .social {
-
-
             padding-top: 0;
           }
         }
