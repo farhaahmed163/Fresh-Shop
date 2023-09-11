@@ -1,46 +1,82 @@
-section {
-  .slider {
-    align-items: center;
+.carasoul {
+  .footer {
+    padding: 50px 0;
     background: linear-gradient(rgba(0, 0, 0, 0.999), rgba(0, 0, 0, 0.7)), url("https://themewagon.github.io/freshshop/images/ins-bg.jpg");
     background-size: cover;
     background-position: center;
-    padding: 50px;
 
-
-    .right {
-      position: absolute;
-      right: 0;
-      color: #fff;
-      top: 0;
-      height: 100%;
-      background-color: transparent;
-      border-radius: 0;
-      display: flex;
+    .slider {
       align-items: center;
-    }
 
-    .right:hover {
-      background-color: #b0b435;
-    }
+      .owl-item {
+        position: relative;
+      }
 
-    .left {
-      position: absolute;
-      left: 0;
-      color: #fff;
-      top: 0;
-      height: 100%;
-      border-radius: 0;
-    }
+      .owl-item::before {
+        content: "\f16d";
+        position: absolute;
+        font-family: "Font Awesome 5 Free";
+        font: var(--fa-font-brands);
+        color: #000;
+        width: 100%;
+        height: 100%;
+        top: 100%;
+        background-color: rgba(211, 59, 51, 0.5);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        visibility: hidden;
+        transition: 0.5s;
+      }
 
-    .left:hover {
-      background-color: #b0b435;
-    }
+      .owl-item:hover::before {
+        visibility: visible;
+        top: 0;
+      }
 
-    .left :hover {
-      background-color: #b0b435;
-    }
 
+
+      .right {
+        position: absolute;
+        right: 0;
+        color: #fff;
+        top: 0;
+        height: 100%;
+        background-color: black;
+        border-radius: 0;
+        display: flex;
+        align-items: center;
+        z-index: 5;
+      }
+
+      .right:hover {
+        background-color: #b0b435;
+      }
+
+      .left {
+        position: absolute;
+        left: 0;
+        color: #fff;
+        top: 0;
+        background-color: black;
+        height: 100%;
+        z-index: 5;
+        border-radius: 0;
+      }
+
+      .left:hover {
+        background-color: #b0b435;
+      }
+
+      .left :hover {
+        background-color: #b0b435;
+      }
+
+    }
   }
+
 
   .top-footer {
     padding: 70px 100px;
@@ -277,7 +313,7 @@ section {
 @media (max-width: 768px) {
   section {
     .top-footer {
-      padding: 0 !important;
+      padding: 0;
 
       .container {
 

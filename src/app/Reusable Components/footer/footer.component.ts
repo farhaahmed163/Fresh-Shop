@@ -5,7 +5,7 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   selector: 'app-footer',
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss'],
-  // encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None
 
 
 })
@@ -44,10 +44,10 @@ export class FooterComponent {
         items: 2
       },
       400: {
-        items: 3
+        items: 2
       },
-      740: {
-        items: 4
+      768: {
+        items: 3
       },
       940: {
         items: 5
